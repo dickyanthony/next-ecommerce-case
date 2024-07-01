@@ -1,5 +1,5 @@
-import { BASE_PRICE } from '@/config/products';
-('use server');
+'use server';
+import { BASE_PRICE } from '@/config/product';
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
 
 import { db } from '@/app/db';

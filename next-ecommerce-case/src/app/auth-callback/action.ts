@@ -1,6 +1,6 @@
+'use server';
 import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
 import { db } from '../db';
-('use server');
 
 export const getAuthStatus = async () => {
   const { getUser } = getKindeServerSession();
