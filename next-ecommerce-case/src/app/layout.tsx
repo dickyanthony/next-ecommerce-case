@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={recursive.className}>
+        {/* @ts-ignore */}
         <NavBar />
         <main className="flex grainy-light flex-col min-h-[calc(100vh-3.5rem-1px)]">
           <div className="flex-1 flex flex-col h-full">
