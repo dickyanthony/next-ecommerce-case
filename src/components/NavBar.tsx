@@ -1,8 +1,8 @@
-import { getKindeServerSession } from '@kinde-oss/kinde-auth-nextjs/server';
-import { ArrowRight } from 'lucide-react';
-import Link from 'next/link';
-import MaxWidthWrapper from './MaxWidthWrapper';
-import { buttonVariants } from './ui/button';
+import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
+import { ArrowRight } from "lucide-react";
+import Link from "next/link";
+import MaxWidthWrapper from "./MaxWidthWrapper";
+import { buttonVariants } from "./ui/button";
 
 const NavBar = async () => {
   const { getUser } = getKindeServerSession();
@@ -21,14 +21,14 @@ const NavBar = async () => {
               <>
                 <Link
                   href="/api/auth/logout"
-                  className={buttonVariants({ size: 'sm', variant: 'ghost' })}
+                  className={buttonVariants({ size: "sm", variant: "ghost" })}
                 >
                   Sign out
                 </Link>
                 {isAdmin ? (
                   <Link
-                    href="/api/auth/logout"
-                    className={buttonVariants({ size: 'sm', variant: 'ghost' })}
+                    href="/dashboard"
+                    className={buttonVariants({ size: "sm", variant: "ghost" })}
                   >
                     Dashboard ✨
                   </Link>
@@ -36,8 +36,8 @@ const NavBar = async () => {
                 <Link
                   href="/configure/upload"
                   className={buttonVariants({
-                    size: 'sm',
-                    className: 'hidden sm:flex items-center gap-1',
+                    size: "sm",
+                    className: "hidden sm:flex items-center gap-1",
                   })}
                 >
                   Create case
@@ -48,7 +48,7 @@ const NavBar = async () => {
               <>
                 <Link
                   href="/api/auth/register"
-                  className={buttonVariants({ size: 'sm', variant: 'ghost' })}
+                  className={buttonVariants({ size: "sm", variant: "ghost" })}
                 >
                   Sign up
                 </Link>
@@ -56,8 +56,8 @@ const NavBar = async () => {
                 <Link
                   href="/api/auth/login"
                   className={buttonVariants({
-                    size: 'sm',
-                    variant: 'ghost',
+                    size: "sm",
+                    variant: "ghost",
                   })}
                 >
                   Login
@@ -66,8 +66,8 @@ const NavBar = async () => {
                 <Link
                   href="/configure/upload"
                   className={buttonVariants({
-                    size: 'sm',
-                    className: 'hidden sm:flex items-center gap-1',
+                    size: "sm",
+                    className: "hidden sm:flex items-center gap-1",
                   })}
                 >
                   Create case
